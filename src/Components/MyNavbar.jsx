@@ -15,7 +15,9 @@ class MyNavbar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#">Home</Nav.Link>
+              <Nav.Link href="#" active="true">
+                Home
+              </Nav.Link>
               <Nav.Link href="#">TV Show</Nav.Link>
               <Nav.Link href="#">Movies</Nav.Link>
               <Nav.Link href="#">Recently Added</Nav.Link>
@@ -31,7 +33,7 @@ class MyNavbar extends Component {
                 <i className="bi bi-bell-fill text-white"></i>{" "}
                 <span className="d-lg-none text-white">Notifications</span>
               </Nav.Link>
-              <NavDropdown title="Profile menù" id="collapsible-nav-dropdown">
+              <NavDropdown title="Profile menu" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#">
                   <img
                     src="./avatar.png"
@@ -42,6 +44,7 @@ class MyNavbar extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#">Settings</NavDropdown.Item>
                 <NavDropdown.Item href="#">Change Profile</NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="#">LogOut</NavDropdown.Item>
                 <NavDropdown.Divider />
               </NavDropdown>

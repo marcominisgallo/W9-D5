@@ -35,7 +35,7 @@ class FilmCategory extends Component {
   render() {
     return (
       <Container fluid>
-        <h4 className="ps-5">{this.props.h4}</h4>
+        <h4 className="ps-5 text-light">{this.props.h4}</h4>
         <FilmRow films={this.state.films} />
       </Container>
     );
